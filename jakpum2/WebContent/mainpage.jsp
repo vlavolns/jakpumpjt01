@@ -67,7 +67,7 @@ iframe{width:100%;height:100%;}
 		<ul>
 		<li><a href='SlideM.html'>Home</a></li>
 		<!-- <li><a href='board_list' target="view">게시판</a></li> -->
-		<!-- <li><a href='bookinsert.jsp' target="view">도서정보등록</a></li> -->
+		<li><a href='bookinsert.jsp' target="view">도서정보등록</a></li>
 		<li><a href='booksearch.jsp' target="view">도서관리</a></li>
 		<!-- <li class="as"><a href='#'>대여/구입</a>
 			<ul class="sub">
