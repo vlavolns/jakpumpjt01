@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>slide</title>
+<link rel="stylesheet" type="text/css" href="slide.css">
+</head>
+
+<body>
+	
+
+	<div class="title">
+		<p id="title2">이달의 책</p>
+	</div>
+	
+	<a href="mainpage.jsp" id="main"><h1>메인페이지로</h1></a>
+	<div id="slide">
+		<ul id="slide_box">
+			<li class="slide1"><a href="#"><img src="http://placehold.it/450*520"> <!-- "9번의일.JPG" --> </a></li>
+			<li class="slide1"><a href="#"><img src="http://placehold.it/450*520" ><!-- "잔혹한어머니의날.JPG" --></a></li>
+			<li class="slide1"><a href="#"><img src="http://placehold.it/450*520" ><!-- "숨그네.JPG" --></a></li>
+		</ul>
+		
+	</div>
+		
+	<div id="button">
+		<img id="left_bt" src="back.png" alt="">
+		<img id="right_bt" src="next.png" alt="">
+	</div>
+
+	
+
+<script type="text/javascript">
+	var slide = document.getElementById('slide_box');
+	var bt_L = document.getElementById('left_bt');
+	var bt_R = document.getElementById('right_bt');
+	var itv;
+	var count = 0;
+	var posX = 0;
+
+	bt_R.addEventListener('click', function(){
+		if(count<2) {
+			clearInterval(itv);
+			count++;
+			aniR();
+		}
+				if(count==2){
+					bt_R.style.display="none";
+				}else {
+					bt_L.style.display="block";
+		}
+	});
+	function aniR(){
+		itv = setInterval(frame,1);
+		function frame(){
+			if (posX == count*-680) {
+				clearInterval(itv);
+			}else {
+				posX-=5;
+				slide.style.left = posX +"px";
+			}
+		}
+	}
+
+
+	bt_L.addEventListener('click', function(){
+		if(count>0) {
+			clearInterval(itv);
+			count--;
+			S_ani_L();
+		}
+				if(count==0){
+					bt_L.style.display="none";
+				}else {
+					bt_R.style.display="block";
+		}
+	});
+	function S_ani_L(){
+		itv = setInterval(frame,1);
+		function frame(){
+			if (posX == count*-680) {
+				clearInterval(itv);
+			}else {
+				posX+=5;
+				slide.style.left = posX +"px";
+			}
+		}
+	}
+
+</script>
+
+
+</body>
+</html>
