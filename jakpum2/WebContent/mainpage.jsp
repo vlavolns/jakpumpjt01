@@ -69,13 +69,13 @@ iframe{width:100%;height:100%;}
 		<!-- <li><a href='board_list' target="view">게시판</a></li> -->
 		<li><a href='bookinsert.jsp' target="view">도서정보등록</a></li>
 		<li><a href='booksearch.jsp' target="view">도서관리</a></li>
-		<!-- <li class="as"><a href='#'>대여/구입</a>
+		<li class="as"><a href='#'>대여/구입</a>
 			<ul class="sub">
 				<li><a href='book_rent.jsp' target='view'>대여</a></li>
-				<li><a href='book_return.jsp' target='view'>반납</a></li>
-				<li><a href='buy.jsp' target="view">구입</a></li>
+				<!-- <li><a href='book_return.jsp' target='view'>반납</a></li> -->
+				<!-- <li><a href='buy.jsp' target="view">구입</a></li> -->
 			</ul>
-		</li> -->
+		</li>
 		<span class="right">
 		<ul>
 		<%
