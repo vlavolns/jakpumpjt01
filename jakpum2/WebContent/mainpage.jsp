@@ -17,7 +17,7 @@ body,html{width:100%; height:100%;margin:0; padding:0;}
 			color:white; height:6%;position:relative; margin:30px 0px;}
 .section{
 		 width:100%; 
-		 height:69%; 
+		 height:69%;
 		 display:flex;
 		 flex:1;}
  .section nav{height:100%; width:85%;}

@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src = "http://code.jquery.com/jquery-1.10.2.js"></script>
-<script>
+<script> 
 function oncheck(){
 	if(!fmL.yak.checked){
 		alert("약관에 동의하세요");

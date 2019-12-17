@@ -8,7 +8,7 @@
 <script>
 function oncheck(){
 	if(!fmM.name.value){
-		alert("이름을 입력하세요");
+		alert("이름을 입력하세요"); 
 		fmM.name.focus();
 		return false;
 	}

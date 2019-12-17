@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 <script>
 	function login(){
-		if(!fm.id.value){
+		if(!fm.id.value){ 
 			alert("아이디를 입력해주세요");
 			fm.id.focus();
 			return false;

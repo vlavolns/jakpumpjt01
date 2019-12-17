@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>회원정보 입력 양식</title>
 <style>
-
+ 
 	table{margin:auto;}
 	form{height:59.1%;}
 	*{margin:0; padding:0;}
