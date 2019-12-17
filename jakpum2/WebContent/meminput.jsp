@@ -12,15 +12,19 @@
 	*{margin:0; padding:0;}
 body,html{width:100%; height:100%;margin:0; padding:0;}
 .header{text-align:center; font-weight:bold; font-size:30px;line-height:100px;height:10%;text-decoration:none;}
-.navigation{width:100%; background-color:black; color:white; height:5%;position:relative;}
+.navigation{width:100%; 
+			background:-webkit-gradient(linear, 90% 50%, 0% 100%, from(#2EA310), to(#0CC9C9)); 
+			color:white; height:6%;position:relative; margin:30px 0px;}
 .section{
-		 width:100%;
-		 height:75%; 
+		 width:100%; 
+		 height:69%; 
 		 display:flex;
-		 flex:1;}
+		 flex:1;
+		 justify-content: center;
+		 }
  .section nav{height:100%; width:85%;}
 .section span{height:100%; width:15%; margin:0;padding:0;}
-li{text-align:center;display:inline-block; height:50px; font-size:15px; width:100px;line-height:50px;
+li{text-align:center;display:inline-block; height:50px; font-size:15px; width:120px;line-height:60px;
 margin:0; padding:0;}
 
 a:link{text-decoration:none;color:black;}
@@ -28,8 +32,8 @@ li:nth-child(5){float:right;}
 li:nth-child(6){float:right;}
 
 li>a{text-decoration:none;
-color:white;}
-.footer{background-color:#D5D5D5; color:#5D5D5D;  font-size:40px; text-align:center; height:10%; line-height:80px;}
+color:white;font-size:17px;}
+.footer{background-color:#86E57F; color:#5D5D5D; text-align:center; height:8.8%;font-size:18px;}
 #fm{
 		width:100%;
 		height:100%;
@@ -39,7 +43,7 @@ figcaption{text-align:center; color:black;}
 .sub{display:none;position:absolute; color:black;background-color:#5D5D5D;width:100px; }
 .as:hover .sub{display:block;}
 .right{float:right;}
-h1{color:black;} 
+h1{color:rgba(60,125,110,1);} 
 </style>
 
 <script>
@@ -69,8 +73,8 @@ h1{color:black;}
 			fm.mid.focus();
 			return false;
 		}
-		if(!fm.mid.value.match('^[0-9]+$')) {
-			alert("전화번호는 숫자만 입력하세요.");
+		if(!fm.mid.value.match(/^[0-9]{3,4}$/)) {
+			alert("전화번호는 숫자만 입력하세요.(3~4자리)");
 			fm.mid.focus();
 			return false;
 		}
@@ -79,8 +83,8 @@ h1{color:black;}
 			fm.last.focus();
 			return false;
 		}
-		if(!fm.last.value.match('^[0-9]+$')) {
-			alert("전화번호는 숫자만 입력하세요.");
+		if(!fm.last.value.match(/^[0-9]{4}$/)) {
+			alert("전화번호는 숫자만 입력하세요.(4자리)");
 			fm.last.focus();
 			return false;
 		}
@@ -128,10 +132,7 @@ h1{color:black;}
 		</span>
 		</ul>
 </div>
-	<nav>
-	<iframe id='fmM' name='view' frameborder="0">
-    </iframe>
-    </nav>
+<div class="section">
 	<form action="joinProcess" name="fm" onsubmit="return oncheck()" method="post">
 	<table border="1">
 	<tr><td colspan="2"><h3 align="center" >회원정보 입력 양식</h3></td></tr>
@@ -202,6 +203,11 @@ h1{color:black;}
 		</tr>
 	</table>
 	</form>
-	<div class="footer">도서 관리 위원회</div>
+	</div>
+	<div class="footer">
+		<p>도서 관리 위원회 </p>
+		<p> 대표자:장석우, 전화번호:010-555-5555</p>
+		<p>회사주소:대한민국 대구 광역시 달서구 ㅇㅇ동ㅇㅇㅇㅇ번지</p>
+	</div>
 </body>
 </html>
